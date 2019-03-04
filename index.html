@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<style>
+
+body {
+   max-width: 100%;
+   margin: auto;
+   background: #004d00;
+   background-size: cover;
+}
+
+/* Blocks */
+
+.flex {
+  @include flex();
+  flex-direction: column;
+}
+
+.main-div
+{
+  order: 0;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+ 
+}
+
+.oops {
+  order: 1;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+margin-top:-50px;
+margin-bottom:-70px;  
+vertical-align: top;
+}
+
+.next {
+ order: 2;
+ display: flex;
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom:-30px;  
+  vertical-align: top;
+}
+
+.error-image {
+ order: 3;
+ display: flex;
+  width: 100%;
+  position: relative;
+ margin-top:-5px;
+margin-bottom:-80px;
+  vertical-align: top;
+}
+
+.fa {
+  order: 4;
+  display: flex;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 60px;
+}
+
+.fa-github {
+order: 5;
+display: flex;
+width: 50%;
+background: none;
+position: relative;
+text-shadow: 0 0 10px black;
+  color: #cc0000;
+  opacity: 1;
+  font-size: 100px;
+  padding: 0px;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+/* Fonts */
+
+h2 {
+	font-family: 'Bangers', cursive;
+	color: black;
+	font-size: 600%;
+	color: #cc0000;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	letter-spacing: 5px;
+}
+
+h3 {
+	font-family: 'Bangers', cursive;
+	color: black;
+	font-size: 200%;
+	color: #ff8c00;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	letter-spacing: 5px;
+}
+
+</style>
+
+
+
+<body>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Error 404</title>
+</head>
+
+<div class="main-div" id="wrapper">
+
+	<div class="oops"><h2>Oops !</h2></div>
+	<div class="next"><h3>Maybe next time...</h3></div>
+	<div class="error-image"><img class="error-image" src="404.png" alt="Error 404"></div>
+	<div class="fa"><div><div><a href="https://github.com/Meulymooh" target="_blank"> <i class="fa fa-github fa-5x" aria-hidden="true"></i></a></div>
+</div>
+
+
+
+</body>
+
+</html>
