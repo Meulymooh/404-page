@@ -13,76 +13,77 @@ body {
 
 /* Blocks */
 
-.flex {
-  @include flex();
-  flex-direction: column;
-}
 
 .main-div
 {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   order: 0;
-  display: flex;
   width: 50%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  align-items: center;
- 
+ margin: auto;
 }
 
 .oops {
   order: 1;
   display: flex;
+    justify-content: center;
   width: 50%;
   margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: -70px;
   position: relative;
-margin-top:-50px;
-margin-bottom:-70px;  
 vertical-align: top;
 }
 
 .next {
- order: 2;
+   order: 2;
  display: flex;
+   justify-content: center;
   width: 50%;
   position: relative;
-  margin: 0 auto;
-  margin-bottom:-30px;  
+margin: auto;
+margin-bottom: -60px;
   vertical-align: top;
 }
 
 .error-image {
  order: 3;
  display: flex;
+   justify-content: center;
   width: 100%;
   position: relative;
- margin-top:-5px;
-margin-bottom:-80px;
+  margin-bottom: -30px;
   vertical-align: top;
 }
 
 .fa {
   order: 4;
   display: flex;
+    justify-content: center;
   width: 50%;
   text-align: center;
   position: relative;
   text-decoration: none;
-  margin: 10px;
+margin: auto;
   font-size: 60px;
+    vertical-align: top;
 }
 
 .fa-github {
 order: 5;
 display: flex;
 width: 50%;
+  justify-content: center;
 background: none;
 position: relative;
 text-shadow: 0 0 10px black;
+margin: auto;
   color: #cc0000;
   opacity: 1;
   font-size: 100px;
   padding: 0px;
-  margin: 0 auto;
   vertical-align: top;
 }
 
@@ -91,7 +92,7 @@ text-shadow: 0 0 10px black;
 h2 {
 	font-family: 'Bangers', cursive;
 	color: black;
-	font-size: 600%;
+	font-size: 500%;
 	color: #cc0000;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	letter-spacing: 5px;
@@ -122,7 +123,7 @@ h3 {
 
 	<div class="oops"><h2>Oops !</h2></div>
 	<div class="next"><h3>Maybe next time...</h3></div>
-	<div class="error-image"><img class="error-image" src="404.png" alt="Error 404"></div>
+	<div class="error-image"><img class="error-image" src="404-4.png" alt="Error 404"></div>
 	<div class="fa"><div><div><a href="https://github.com/Meulymooh" target="_blank"> <i class="fa fa-github fa-5x" aria-hidden="true"></i></a></div>
 </div>
 
